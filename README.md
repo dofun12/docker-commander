@@ -17,6 +17,10 @@ Clone the project:
 
     git clone https://github.com/dofun12/docker-commander
 
+Go to the directory
+
+    cd docker-commander
+
 Then install the dependencies:
 
     pipenv install
