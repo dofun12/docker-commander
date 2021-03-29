@@ -7,13 +7,16 @@ from flask_cors import CORS
 from flask import render_template
 from flask import redirect
 from flask import jsonify
+import configparser
 
+config = configparser.ConfigParser()
+config.read('config.ini')
 app = Flask(__name__, static_folder='static')
 CORS(app)
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-base_tcp_url = 'tcp://localhost:2375'
+base_tcp_url = config['DOCKER']['TCP_URL']
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -75,7 +78,7 @@ def stop_container():
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=config['DEFAULT']['Port'], debug=config['DEFAULT']['Debug'])
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
