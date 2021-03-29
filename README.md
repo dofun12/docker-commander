@@ -27,3 +27,4 @@ Now open your browser at:
 You can also configure the server port at **config.ini**
 
 ## Preview
+![preview image](https://raw.githubusercontent.com/dofun12/docker-commander/master/preview-images/preview.JPG)
