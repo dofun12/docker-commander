@@ -1,6 +1,9 @@
 # Docker Commander
 A simple docker dashboard, where you can start or stop the containers remotely
 
+## Preview
+![preview image](https://raw.githubusercontent.com/dofun12/docker-commander/master/preview-images/preview.JPG)
+
 ## Requirements
 
  - Docker
@@ -26,5 +29,4 @@ Now open your browser at:
 
 You can also configure the server port at **config.ini**
 
-## Preview
-![preview image](https://raw.githubusercontent.com/dofun12/docker-commander/master/preview-images/preview.JPG)
+
