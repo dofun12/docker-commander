@@ -33,4 +33,8 @@ Now open your browser at:
 
 You can also configure the server port at **config.ini**
 
+# Service
+Running as service on debian or ubuntu:
+
+    ./create-service.sh
 
